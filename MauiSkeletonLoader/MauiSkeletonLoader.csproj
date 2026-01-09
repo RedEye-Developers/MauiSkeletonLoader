@@ -23,6 +23,7 @@
         <Product>Maui-SkeletonLoader</Product>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+        <PackageIcon>icon.png</PackageIcon>
 
         <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">15.0</SupportedOSPlatformVersion>
         <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">15.0</SupportedOSPlatformVersion>
@@ -38,5 +39,6 @@
     <ItemGroup>
         <None Include="Docs\LICENSE.txt" Pack="true" PackagePath=""/>
         <None Include="Docs\README.md" Pack="true" PackagePath=""/>
+        <None Include="Docs\Images\icon.png" Pack="true" PackagePath=""/>
     </ItemGroup>
 </Project>
