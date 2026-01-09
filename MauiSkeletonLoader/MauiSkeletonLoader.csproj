@@ -17,10 +17,13 @@
         <PackageProjectUrl>https://github.com/RedEye-Developers/MauiSkeletonLoader</PackageProjectUrl>
         <RepositoryType>git</RepositoryType>
         <RepositoryUrl>https://github.com/RedEye-Developers/MauiSkeletonLoader</RepositoryUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <Copyright>Copyright (c) 2026 RedEye-Developers</Copyright>
         <PackageTags>dotnet-maui;maui;cross-platform</PackageTags>
         <Company>RedEye-Developers</Company>
         <Product>Maui-SkeletonLoader</Product>
-        <PackRelease>true</PackRelease>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
 
         <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">15.0</SupportedOSPlatformVersion>
         <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">15.0</SupportedOSPlatformVersion>
@@ -29,10 +32,12 @@
         <TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
     </PropertyGroup>
 
-    <ItemGroup>
+    <ItemGroup> 
         <PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)"/>
     </ItemGroup>
+
     <ItemGroup>
-        <None Include="Docs\README.md" Pack="true" PackagePath="\"/>
+        <None Include="LICENSE.txt" Pack="true" PackagePath=""/>
+        <None Include="README.md" Pack="true" PackagePath=""/>
     </ItemGroup>
 </Project>
