@@ -48,7 +48,7 @@ xmlns:skeleton="clr-namespace:MauiSkeletonLoader"
 
 A rectangular skeleton loader built on top of `Border`. Ideal for text lines, cards, and content blocks.
 
-![BSkeletonLoader](https://github.com/RedEye-Developers/MauiSkeletonLoader/blob/master/MauiSkeletonLoader/Docs/Images/BSkeleton.gif)
+![BSkeletonLoader](https://raw.githubusercontent.com/RedEye-Developers/MauiSkeletonLoader/refs/heads/master/MauiSkeletonLoader/Docs/Images/BSkeleton.gif?token=GHSAT0AAAAAADSYLTJJJIFDBN23KA4RBSFM2LARMCA)
 
 ### Example
 
@@ -65,7 +65,7 @@ A rectangular skeleton loader built on top of `Border`. Ideal for text lines, ca
 
 A circular skeleton loader implemented as a `ContentView` wrapping an `Ellipse`. Perfect for avatars or profile images.
 
-![ESkeletonLoader](https://github.com/RedEye-Developers/MauiSkeletonLoader/blob/master/MauiSkeletonLoader/Docs/Images/ESkeleton.gif)
+![ESkeletonLoader](https://raw.githubusercontent.com/RedEye-Developers/MauiSkeletonLoader/refs/heads/master/MauiSkeletonLoader/Docs/Images/ESkeleton.gif?token=GHSAT0AAAAAADSYLTJJJJRQPGERXAGZ2JKW2LARMXA)
 
 ### Example
 
@@ -79,7 +79,7 @@ A circular skeleton loader implemented as a `ContentView` wrapping an `Ellipse`.
 
 You can easily combine multiple skeleton loaders to simulate complex layouts.
 
-![MultipleSkeletonLoader](https://github.com/RedEye-Developers/MauiSkeletonLoader/blob/master/MauiSkeletonLoader/Docs/Images/SkeleonLoaders.gif)
+![MultipleSkeletonLoader](https://raw.githubusercontent.com/RedEye-Developers/MauiSkeletonLoader/refs/heads/master/MauiSkeletonLoader/Docs/Images/SkeleonLoaders.gif?token=GHSAT0AAAAAADSYLTJIORHZYIWJIOCQO7HO2LARNAQ)
 
 ```xml
 <VerticalStackLayout
