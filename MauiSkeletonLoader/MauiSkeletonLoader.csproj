@@ -11,11 +11,16 @@
         <MauiXamlInflator>SourceGen</MauiXamlInflator>
         <PackageId>RedEye-Developers.Maui-NuGet.SkeletonLoader</PackageId>
         <Version>1.0.0</Version>
+        <Authors>Reswin</Authors>
+        <Description>SkeletonLoader For Maui</Description>
+        <PackageReleaseNotes>First Release</PackageReleaseNotes>
+        <PackageProjectUrl>https://github.com/RedEye-Developers/MauiSkeletonLoader</PackageProjectUrl>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/RedEye-Developers/MauiSkeletonLoader</RepositoryUrl>
+        <PackageTags>dotnet-maui;maui;cross-platform</PackageTags>
         <Company>RedEye-Developers</Company>
-        <Author>Reswin</Author>
         <Product>Maui-SkeletonLoader</Product>
         <PackRelease>true</PackRelease>
-        <Description>SkeletonLoader For Maui</Description>
 
         <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">15.0</SupportedOSPlatformVersion>
         <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">15.0</SupportedOSPlatformVersion>
@@ -26,5 +31,8 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)"/>
+    </ItemGroup>
+    <ItemGroup>
+        <None Include="Docs\README.md" Pack="true" PackagePath="\"/>
     </ItemGroup>
 </Project>

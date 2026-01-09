@@ -1,0 +1,5 @@
+﻿### MAUI SkeletonLoader
+
+---
+
+**BSkeletonLoader**
