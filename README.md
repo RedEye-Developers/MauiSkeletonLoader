@@ -22,7 +22,7 @@ This library supports both **rectangular** and **circular (ellipse)** skeleton l
 ## 📦 Namespace
 
 ```xml
-xmlns:sl="clr-namespace:SkeletonLoader;assembly=SkeletonLoader"
+xmlns:sl="clr-namespace:SkeletonLoader;assembly=MauiSkeletonLoader"
 ```
 
 ---
