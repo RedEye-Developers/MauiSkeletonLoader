@@ -1,5 +1,7 @@
 ﻿# MAUI SkeletonLoader
 
+[![NuGet version (RedEye.Maui.SkeletonLoader)](https://img.shields.io/nuget/v/RedEye.Maui.SkeletonLoader.svg?style=flat-square)](https://www.nuget.org/packages/RedEye.Maui.SkeletonLoader/)
+
 A lightweight, customizable **Skeleton Loader** for **.NET MAUI** that provides animated placeholder UI elements while content is loading.
 
 This library supports both **rectangular** and **circular (ellipse)** skeleton loaders with smooth gradient wave animations.
@@ -20,7 +22,7 @@ This library supports both **rectangular** and **circular (ellipse)** skeleton l
 ## 📦 Namespace
 
 ```xml
-xmlns:skeleton="clr-namespace:MauiSkeletonLoader"
+xmlns:sl="clr-namespace:SkeletonLoader;assembly=SkeletonLoader"
 ```
 
 ---
@@ -48,15 +50,14 @@ xmlns:skeleton="clr-namespace:MauiSkeletonLoader"
 
 A rectangular skeleton loader built on top of `Border`. Ideal for text lines, cards, and content blocks.
 
-![BSkeletonLoader](https://github.com/RedEye-Developers/MauiSkeletonLoader/blob/master/MauiSkeletonLoader/Docs/Images/BSkeleton.gif)
+![BSkeletonLoader](https://raw.githubusercontent.com/RedEye-Developers/MauiSkeletonLoader/refs/heads/master/MauiSkeletonLoader/Docs/Images/BSkeleton.gif)
 
 ### Example
 
 ```xml
-<BSkeletonLoader
-    WidthRequest="400"
-    HeightRequest="240"
-    StrokeShape="RoundRectangle 15" />
+<sl:BSkeletonLoader WidthRequest="400"
+                    HeightRequest="240"
+                    StrokeShape="RoundRectangle 15" />
 ```
 
 ---
@@ -65,12 +66,12 @@ A rectangular skeleton loader built on top of `Border`. Ideal for text lines, ca
 
 A circular skeleton loader implemented as a `ContentView` wrapping an `Ellipse`. Perfect for avatars or profile images.
 
-![ESkeletonLoader](https://github.com/RedEye-Developers/MauiSkeletonLoader/blob/master/MauiSkeletonLoader/Docs/Images/ESkeleton.gif)
+![ESkeletonLoader](https://raw.githubusercontent.com/RedEye-Developers/MauiSkeletonLoader/refs/heads/master/MauiSkeletonLoader/Docs/Images/ESkeleton.gif)
 
 ### Example
 
 ```xml
-<ESkeletonLoader Size="50" />
+<sl:ESkeletonLoader Size="50" />
 ```
 
 ---
@@ -79,7 +80,7 @@ A circular skeleton loader implemented as a `ContentView` wrapping an `Ellipse`.
 
 You can easily combine multiple skeleton loaders to simulate complex layouts.
 
-![MultipleSkeletonLoader](https://github.com/RedEye-Developers/MauiSkeletonLoader/blob/master/MauiSkeletonLoader/Docs/Images/SkeleonLoaders.gif)
+![MultipleSkeletonLoader](https://raw.githubusercontent.com/RedEye-Developers/MauiSkeletonLoader/refs/heads/master/MauiSkeletonLoader/Docs/Images/SkeleonLoaders.gif)
 
 ```xml
 <VerticalStackLayout
@@ -89,15 +90,15 @@ You can easily combine multiple skeleton loaders to simulate complex layouts.
 
     <HorizontalStackLayout Spacing="10">
 
-        <ESkeletonLoader Size="50" />
+        <sl:ESkeletonLoader Size="50" />
 
         <VerticalStackLayout Spacing="10" Margin="0,15,0,0">
-            <BSkeletonLoader
+            <sl:BSkeletonLoader
                 WidthRequest="300"
                 HeightRequest="8"
                 StrokeShape="RoundRectangle 50" />
 
-            <BSkeletonLoader
+            <sl:BSkeletonLoader
                 WidthRequest="150"
                 HeightRequest="8"
                 StrokeShape="RoundRectangle 50"
@@ -105,19 +106,19 @@ You can easily combine multiple skeleton loaders to simulate complex layouts.
         </VerticalStackLayout>
     </HorizontalStackLayout>
 
-    <BSkeletonLoader
+    <sl:BSkeletonLoader
         WidthRequest="400"
         HeightRequest="240"
         StrokeShape="RoundRectangle 15" />
 
     <VerticalStackLayout Spacing="10" Margin="0,15,0,0">
-        <BSkeletonLoader
+        <sl:BSkeletonLoader
             WidthRequest="300"
             HeightRequest="8"
             StrokeShape="RoundRectangle 50"
             HorizontalOptions="Start" />
 
-        <BSkeletonLoader
+        <sl:BSkeletonLoader
             WidthRequest="200"
             HeightRequest="8"
             StrokeShape="RoundRectangle 50"

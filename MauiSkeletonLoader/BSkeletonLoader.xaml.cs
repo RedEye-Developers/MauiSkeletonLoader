@@ -1,4 +1,4 @@
-﻿namespace MauiSkeletonLoader;
+﻿namespace SkeletonLoader;
 
 public partial class BSkeletonLoader : Border
 {

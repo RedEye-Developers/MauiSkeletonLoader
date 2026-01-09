@@ -2,7 +2,7 @@
 
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiSkeletonLoader.ESkeletonLoader"
+             x:Class="SkeletonLoader.ESkeletonLoader"
              x:Name="Root"
              WidthRequest="{Binding Source={RelativeSource Self}, Path=Size}"
              HeightRequest="{Binding Source={RelativeSource Self}, Path=Size}">
