@@ -7,6 +7,12 @@ public partial class BSkeletonLoader : Border
     
     public static readonly BindableProperty DelaySecondProperty =
         BindableProperty.Create(nameof(DelaySecond), typeof(double), typeof(BSkeletonLoader), 1d);
+    
+    public new static readonly BindableProperty BackgroundColorProperty =
+        BindableProperty.Create(nameof(BackgroundColor), typeof(Color), typeof(BSkeletonLoader), new Color(60,60,60));
+    
+    public static readonly BindableProperty WaveColorProperty =
+        BindableProperty.Create(nameof(WaveColor), typeof(Color), typeof(BSkeletonLoader), new Color(70, 70, 70));
 
     public double Speed
     {
@@ -18,6 +24,18 @@ public partial class BSkeletonLoader : Border
     {
         get => (double)GetValue(DelaySecondProperty);
         set => SetValue(DelaySecondProperty, value);
+    }
+    
+    public new Color BackgroundColor
+    {
+        get => (Color)GetValue(BackgroundColorProperty);
+        set => SetValue(BackgroundColorProperty, value);
+    }
+    
+    public Color WaveColor
+    {
+        get => (Color)GetValue(WaveColorProperty);
+        set => SetValue(WaveColorProperty, value);
     }
     
     private CancellationTokenSource? _cts;

@@ -21,8 +21,8 @@ This library supports both **rectangular** and **circular (ellipse)** skeleton l
 
 ## 📦 Namespace
 
-```xml
-xmlns:sl="clr-namespace:SkeletonLoader;assembly=MauiSkeletonLoader"
+```text
+xmlns:sk="clr-namespace:SkeletonLoader;assembly=MauiSkeletonLoader"
 ```
 
 ---
@@ -31,11 +31,12 @@ xmlns:sl="clr-namespace:SkeletonLoader;assembly=MauiSkeletonLoader"
 
 ### Common Properties (`BSkeletonLoader`, `ESkeletonLoader`)
 
-| Property      | Type     | Default | Description                                         |
-| ------------- | -------- | ------- | --------------------------------------------------- |
-| `Speed`       | `double` | `1.0`   | Controls the animation speed (higher = faster wave) |
-| `DelaySecond` | `double` | `1.0`   | Delay before the animation restarts (in seconds)    |
-
+| Property          | Type     | Default           | Description                                         |
+|-------------------|----------|-------------------|-----------------------------------------------------|
+| `Speed`           | `double` | `1.0`             | Controls the animation speed (higher = faster wave) |
+| `DelaySecond`     | `double` | `1.0`             | Delay before the animation restarts (in seconds)    |
+| `BackgroundColor` | `Color`  | `RGB(60, 60, 60)` | Base background color of the skeleton loader        |
+| `WaveColor`       | `Color`  | `RGB(70, 70, 70)` | Highlight color used for the wave animation         |
 ---
 
 ### `ESkeletonLoader` Specific Properties
@@ -52,12 +53,20 @@ A rectangular skeleton loader built on top of `Border`. Ideal for text lines, ca
 
 ![BSkeletonLoader](https://raw.githubusercontent.com/RedEye-Developers/MauiSkeletonLoader/refs/heads/master/MauiSkeletonLoader/Docs/Images/BSkeleton.gif)
 
+![BSkeletonLoaderColor](https://raw.githubusercontent.com/RedEye-Developers/MauiSkeletonLoader/refs/heads/master/MauiSkeletonLoader/Docs/Images/BSkeleton_Color.gif)
+
 ### Example
 
 ```xml
-<sl:BSkeletonLoader WidthRequest="400"
-                    HeightRequest="240"
+<sk:BSkeletonLoader WidthRequest="400"
+                    HeightRequest="250"
                     StrokeShape="RoundRectangle 15" />
+
+<sk:BSkeletonLoader WidthRequest="400"
+                    HeightRequest="250"
+                    StrokeShape="RoundRectangle 15"
+                    BackgroundColor="Red"
+                    WaveColor="Blue"/>
 ```
 
 ---
@@ -68,10 +77,16 @@ A circular skeleton loader implemented as a `ContentView` wrapping an `Ellipse`.
 
 ![ESkeletonLoader](https://raw.githubusercontent.com/RedEye-Developers/MauiSkeletonLoader/refs/heads/master/MauiSkeletonLoader/Docs/Images/ESkeleton.gif)
 
+![ESkeletonLoader](https://raw.githubusercontent.com/RedEye-Developers/MauiSkeletonLoader/refs/heads/master/MauiSkeletonLoader/Docs/Images/ESkeleton_Color.gif)
+
 ### Example
 
 ```xml
-<sl:ESkeletonLoader Size="50" />
+<sk:ESkeletonLoader Size="50" />
+
+<sk:ESkeletonLoader Size="50"
+                    BackgroundColor="Orange"
+                    WaveColor="Aqua"/>
 ```
 
 ---

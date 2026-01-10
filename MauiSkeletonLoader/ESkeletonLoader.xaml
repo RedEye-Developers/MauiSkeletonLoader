@@ -11,9 +11,9 @@
              HeightRequest="{Binding Source={x:Reference Root}, Path=Size}">
         <Ellipse.Background>
             <LinearGradientBrush StartPoint="0,0" EndPoint="1,0" >
-                <GradientStop Color="#3B3B3B" Offset="0" x:Name="GradientStop1"/>
-                <GradientStop Color="#454545" Offset="0.5" x:Name="GradientStop2"/>
-                <GradientStop Color="#3B3B3B" Offset="1" x:Name="GradientStop3"/>
+                <GradientStop Color="{Binding Source={x:Reference Root}, Path=BackgroundColor, Mode=OneWay}" Offset="0" x:Name="GradientStop1"/>
+                <GradientStop Color="{Binding Source={x:Reference Root}, Path=WaveColor, Mode=OneWay}" Offset="0.5" x:Name="GradientStop2"/>
+                <GradientStop Color="{Binding Source={x:Reference Root}, Path=BackgroundColor, Mode=OneWay}" Offset="1" x:Name="GradientStop3"/>
             </LinearGradientBrush>
         </Ellipse.Background>
     </Ellipse>

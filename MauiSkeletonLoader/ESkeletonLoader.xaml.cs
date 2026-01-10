@@ -10,6 +10,12 @@ public partial class ESkeletonLoader : ContentView
 
     public static readonly BindableProperty SizeProperty =
         BindableProperty.Create(nameof(Size), typeof(int), typeof(ESkeletonLoader), 10);
+    
+    public new static readonly BindableProperty BackgroundColorProperty =
+        BindableProperty.Create(nameof(BackgroundColor), typeof(Color), typeof(ESkeletonLoader), new Color(60,60,60));
+    
+    public static readonly BindableProperty WaveColorProperty =
+        BindableProperty.Create(nameof(WaveColor), typeof(Color), typeof(ESkeletonLoader), new Color(70, 70, 70));
 
     public double Speed
     {
@@ -27,6 +33,18 @@ public partial class ESkeletonLoader : ContentView
     {
         get => (int)GetValue(SizeProperty);
         set => SetValue(SizeProperty, value);
+    }
+    
+    public new Color BackgroundColor
+    {
+        get => (Color)GetValue(BackgroundColorProperty);
+        set => SetValue(BackgroundColorProperty, value);
+    }
+    
+    public Color WaveColor
+    {
+        get => (Color)GetValue(WaveColorProperty);
+        set => SetValue(WaveColorProperty, value);
     }
     
     private CancellationTokenSource? _cts;
